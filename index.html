@@ -1,12 +1,13 @@
  <!DOCTYPE html>
  <html lang="en">
   <head>
+      <link rel="stylesheet" href="./css/style.css">
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
       <title>Welcome to Kokoa Talk</title>
   </head>
   <body>
-      <div id="status-bar">
+      <div class="status-bar">
           <div class="status-bar__column">
           <span>No Service</span>
           <i class="fas fa-wifi"></i>
@@ -15,23 +16,23 @@
               <span>18:43</span>
           </div>
           <div class="status-bar__column">
-              <span>11%</span>
-              <i class="fas fa-battery-full"></i>
+              <span>110%</span>
+              <i class="fas fa-battery-full fa-2x"></i>
               <i class="fas fa-bolt"></i>
           </div>
       </div>
 
-      <header="Welcome-header">
+      <header class="Welcome-header">
         <h1 class="Welcome-header__title" >Welcome to KokoaTalk</h1>
-        <p class="Welcome-header__text" >If you hae a KokoaTalk Account, log in with email or phone number.</p>
+        <p class="Welcome-header__text" >If you have a KokoaTalk Account, log in with email or phone number.</p>
       </header>
 
-      <form>
-          <input type="text" placeholder="Email or phone number"/>
-          <input type="password" placeholder="Password"/>
+      <form action="friends.html" method="get" id="login-form">
+          <input name="username" type="text" placeholder="Email or phone number"/>
+          <input name="password" type="password" placeholder="Password"/>
           <input type="submit" value="Log in"/>
-          <a hreg="#">Find Kakao Account or Password></a>
-          </form>
+          <a href="#">Find Kakao Account or Password></a>
+      </form>
 
       <script
       src="https://kit.fontawesome.com/6478f529f2.js"
